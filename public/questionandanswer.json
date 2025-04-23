@@ -1,0 +1,27 @@
+[
+    {
+        "question": "What is useState and how does it work in React?",
+        "answer": "The useState hook in React enables functional components to manage state. It provides a way to declare state variables and update them, triggering re-renders of the component when the state changes. ",
+        "date": "2002-2-4"
+    },
+    {
+        "question": "What is the purpose of useEffect in React?",
+        "answer": "The useEffect Hook allows you to perform side effects in your components.Some examples of side effects are: fetching data, directly updating the DOM, and timers.useEffect accepts two arguments. The second argument is optional. useEffect(<function>, <dependency>)",
+        "date": "2024-11-4"
+    },
+    {
+        "question": "What is a custom hook in React and when should you use one?",
+        "answer": "Hooks are reusable functions.When you have component logic that needs to be used by multiple components, we can extract that logic to a custom Hook.Custom Hooks start with 'use' Example: useFetch",
+        "date": "2022-2-4"
+    },
+    {
+        "question": "Difference between controlled and uncontrolled components?",
+        "answer": "In React, a component is called “controlled” when we allow React to take control of it. This means the component manages the input form, and any changes to it are handled entirely by React using event handlers like setState(). Additionally, the component handles rendering and stores the form data within its own state.",
+        "date": "2012-4-3"
+    },
+    {
+        "question": "Which one is better? Tell us something about useFormStatus() (explore and explain)",
+        "answer": "useFormStatus() is a React hook that helps track the status of a form submission, mainly used with Next.js App Router and Server Actions. It provides a pending value, which becomes true while the form is being submitted. This allows you to easily disable the submit button or show a loading message like “Submitting...”. It simplifies code by removing the need for manual useState to track loading. However, it only works within forms using server actions in supported setups like Next.js 13+.",
+        "date": "2025-1-3"
+    }
+]
