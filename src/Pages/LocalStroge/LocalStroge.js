@@ -1,4 +1,3 @@
-import { NavLink } from "react-router";
 import {toast} from "react-toastify"
 export const getDoctor = () => {
   const doctor = localStorage.getItem("doctor");
@@ -9,18 +8,15 @@ export const getDoctor = () => {
   }
 };
 
-export const setDoctor = (doctor,fn) => {
+export const setDoctor = (doctor) => {
   const doctorItem = getDoctor();
   const isExist = doctorItem.find((d) => d.id === doctor.id);
   if (isExist) {
-    return (
-      toast.error(`Appointment allready scheduled for ${doctor.name} today!`),
-      fn(false)
-    )
+    return 
   } else {
     doctorItem.push(doctor)
-    toast.success(`Appointment scheduled for ${doctor.name} Successfully!!`)
     localStorage.setItem("doctor", JSON.stringify(doctorItem));
+    
   }
 };
 

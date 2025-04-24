@@ -8,7 +8,7 @@
     "speciality": "General Medicine",
     "experience": "12+ years experience",
     "registration_number": "BMDC-123456",
-    "consultation_fee": "800 BDT",
+    "consultation_fee": "850 BDT",
     "working_at": "Green Life Medical College Hospital, Dhaka",
     "availability_day": ["Sunday", "Tuesday", "Thursday"]
   },
@@ -34,7 +34,7 @@
     "speciality": "Gynecologist",
     "experience": "14+ years experience",
     "registration_number": "BMDC-445566",
-    "consultation_fee": "900 BDT",
+    "consultation_fee": "920 BDT",
     "working_at": "Popular Diagnostic Center, Uttara",
     "availability_day": ["Sunday", "Tuesday", "Friday"]
   },
@@ -47,7 +47,7 @@
     "speciality": "Cardiologist",
     "experience": "9+ years experience",
     "registration_number": "BMDC-778899",
-    "consultation_fee": "1200 BDT",
+    "consultation_fee": "530 BDT",
     "working_at": "Labaid Cardiac Hospital",
     "availability_day": ["Saturday", "Monday", "Wednesday"]
   },
@@ -60,7 +60,7 @@
     "speciality": "Dermatologist",
     "experience": "11+ years experience",
     "registration_number": "BMDC-334455",
-    "consultation_fee": "700 BDT",
+    "consultation_fee": "621 BDT",
     "working_at": "Square Hospital, Panthapath",
     "availability_day": ["Monday", "Thursday"]
   },
@@ -73,7 +73,7 @@
     "speciality": "ENT Specialist",
     "experience": "8+ years experience",
     "registration_number": "BMDC-998877",
-    "consultation_fee": "750 BDT",
+    "consultation_fee": "752 BDT",
     "working_at": "Dhaka Medical College Hospital",
     "availability_day": ["Sunday", "Tuesday", "Friday"]
   },
@@ -86,7 +86,7 @@
     "speciality": "Pediatrician",
     "experience": "13+ years experience",
     "registration_number": "BMDC-556677",
-    "consultation_fee": "850 BDT",
+    "consultation_fee": "836 BDT",
     "working_at": "Shishu Hospital, Dhaka",
     "availability_day": ["Saturday", "Monday", "Wednesday"]
   },
@@ -99,7 +99,7 @@
     "speciality": "Urologist",
     "experience": "15+ years experience",
     "registration_number": "BMDC-223344",
-    "consultation_fee": "1100 BDT",
+    "consultation_fee": "101 BDT",
     "working_at": "United Hospital, Dhaka",
     "availability_day": ["Sunday", "Tuesday", "Thursday"]
   },
@@ -112,7 +112,7 @@
     "speciality": "Neurologist",
     "experience": "10+ years experience",
     "registration_number": "BMDC-667788",
-    "consultation_fee": "1300 BDT",
+    "consultation_fee": "339 BDT",
     "working_at": "National Institute of Neurosciences",
     "availability_day": ["Monday", "Wednesday", "Friday"]
   },
@@ -125,7 +125,7 @@
     "speciality": "General Surgeon",
     "experience": "11+ years experience",
     "registration_number": "BMDC-889900",
-    "consultation_fee": "950 BDT",
+    "consultation_fee": "1001 BDT",
     "working_at": "Sir Salimullah Medical College Hospital",
     "availability_day": ["Saturday", "Tuesday", "Thursday"]
   },
@@ -138,7 +138,7 @@
     "speciality": "Obstetrician",
     "experience": "12+ years experience",
     "registration_number": "BMDC-112244",
-    "consultation_fee": "850 BDT",
+    "consultation_fee": "402 BDT",
     "working_at": "Central Hospital, Dhaka",
     "availability_day": ["Sunday", "Monday", "Wednesday"]
   },
@@ -151,7 +151,7 @@
     "speciality": "Psychiatrist",
     "experience": "9+ years experience",
     "registration_number": "BMDC-334466",
-    "consultation_fee": "950 BDT",
+    "consultation_fee": "281 BDT",
     "working_at": "National Institute of Mental Health",
     "availability_day": ["Sunday", "Wednesday", "Friday"]
   }

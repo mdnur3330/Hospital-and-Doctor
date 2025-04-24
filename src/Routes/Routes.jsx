@@ -15,11 +15,6 @@ export const routes = createBrowserRouter([
       {
         path: "/",
         Component: Home,
-        hydrateFallbackElement: <div className="text-center">
-          <span className="loading loading-spinner loading-xl"></span>
-          <span className="loading loading-spinner loading-xl"></span>
-          <span className="loading loading-spinner loading-xl"></span>
-        </div>,
         loader: () => fetch("../doctors.json"),
       },
       {path:'/details/:id',
