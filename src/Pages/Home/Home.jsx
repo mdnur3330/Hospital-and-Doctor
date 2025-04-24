@@ -14,6 +14,7 @@ const Home = () => {
       <Hero></Hero>
       <Doctors></Doctors>
       <Counter></Counter>
+
     </div>
   );
 };

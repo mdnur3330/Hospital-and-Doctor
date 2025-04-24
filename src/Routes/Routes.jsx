@@ -15,10 +15,12 @@ export const routes = createBrowserRouter([
       {
         path: "/",
         Component: Home,
+        hydrateFallbackElement: "loging...",
         loader: () => fetch("../doctors.json"),
       },
       {path:'/details/:id',
         Component: Details,
+        hydrateFallbackElement: "loging...",
         loader: ()=> fetch("../doctors.json")
       },
       {
@@ -28,6 +30,7 @@ export const routes = createBrowserRouter([
       {
         path:'/blog',
         Component: Blogs,
+        hydrateFallbackElement: "loging...",
         loader: ()=> fetch("../questionandanswer.json")
       }
     ],

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { PiTrademarkRegistered } from "react-icons/pi";
-import { useLoaderData, useNavigate, useParams } from "react-router";
-import { FiAlertCircle } from "react-icons/fi";
+import { Link, useLoaderData, useNavigate, useParams } from "react-router";
+import { FiAlertTriangle } from "react-icons/fi";
 import { getDoctor, setDoctor } from "../LocalStroge/LocalStroge";
 import { toast, ToastContainer } from "react-toastify";
 
@@ -12,6 +12,7 @@ const Details = () => {
   const singleDoctors = doctorsDetails.find(
     (doctor) => doctor.registration_number === id
   );
+  
   const {
     consultation_fee,
     availability_day,
@@ -34,7 +35,6 @@ const Details = () => {
     if (!alreadyBooked) {
       
       const bookedDoctor = { ...singleDoctors, booked: true };
-      console.log(bookedDoctor);
       setDoctor(bookedDoctor); 
       setBooked(true);
       toast.success(`Appointment scheduled for ${bookedDoctor.name} Successfully!!`)
@@ -60,6 +60,10 @@ const Details = () => {
           <PiTrademarkRegistered />
           {id}
         </p>
+
+        <button>
+        <Link className='btn px-3.5 bg-indigo-600 hover:bg-indigo-500 text-white' to="/">Viwe All Doctors</Link>
+        </button>
       </div>
     );
   }
@@ -94,7 +98,7 @@ const Details = () => {
           <p>
             Availability{" "}
             {availability_day.map((day) => (
-              <button className="border bg-gray-100 px-1 rounded-full mr-2">
+              <button className="bg-yellow-300 px-3 rounded-full mr-2">
                 {day}
               </button>
             ))}
@@ -115,8 +119,8 @@ const Details = () => {
               Doctor Available Today
             </p>
           </div>
-          <p className="text-red-600 bg-fuchsia-200 rounded-full px-3 flex items-center gap-2">
-            <FiAlertCircle />
+          <p className="text-yellow-400 bg-yellow-100 rounded-full px-3 flex items-center gap-2">
+          <FiAlertTriangle />
             Due to high patient volume, we are currently accepting appointments
             for today only. We appreciate your understanding and cooperation.
           </p>

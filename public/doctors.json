@@ -21,7 +21,7 @@
     "speciality": "Orthopaedic Surgeon",
     "experience": "10+ years experience",
     "registration_number": "BMDC-112233",
-    "consultation_fee": "1000 BDT",
+    "consultation_fee": "560 BDT",
     "working_at": "Ibn Sina Hospital, Dhanmondi",
     "availability_day": ["Monday", "Wednesday"]
   },
@@ -34,7 +34,7 @@
     "speciality": "Gynecologist",
     "experience": "14+ years experience",
     "registration_number": "BMDC-445566",
-    "consultation_fee": "920 BDT",
+    "consultation_fee": "420 BDT",
     "working_at": "Popular Diagnostic Center, Uttara",
     "availability_day": ["Sunday", "Tuesday", "Friday"]
   },
@@ -125,7 +125,7 @@
     "speciality": "General Surgeon",
     "experience": "11+ years experience",
     "registration_number": "BMDC-889900",
-    "consultation_fee": "1001 BDT",
+    "consultation_fee": "506 BDT",
     "working_at": "Sir Salimullah Medical College Hospital",
     "availability_day": ["Saturday", "Tuesday", "Thursday"]
   },

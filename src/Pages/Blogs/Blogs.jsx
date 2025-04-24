@@ -1,10 +1,9 @@
 import React from 'react';
 import { useLoaderData } from 'react-router';
-import Blog from './blog';
+import Blog from './Blog';
 
 const Blogs = () => {
     const data = useLoaderData()
-    console.log(data);
     return (
         <div>
            {data.map((item,i) => <Blog

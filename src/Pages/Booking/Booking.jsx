@@ -38,8 +38,6 @@ const Booking = () => {
     return doctor;
   });
 
-  console.log(doctorChart);
-
   const getPath = (x, y, width, height) =>
     `M${x},${y + height}
      C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3} ${
@@ -77,7 +75,7 @@ const Booking = () => {
         </div>
       ) : (
         <div>
-          <div className="bg-white rounded-lg m-10 pt-10">
+          <div className="bg-white rounded-lg m-10 pt-10 w-full h-[300]">
             <BarChart width={1300} height={500} data={doctorChart}>
               <XAxis dataKey="name" />
               <YAxis />
@@ -104,7 +102,7 @@ const Booking = () => {
             </p>
           </div>
           {doctors.map((d) => (
-            <div className="bg-white rounded-lg py-4 px-10 my-6">
+            <div key={d.id} className="bg-white rounded-lg py-4 px-10 my-6">
               <h2 className="text-2xl font-bold mb-3">{d.name}</h2>
               <div className="flex justify-between border-b border-dashed border-gray-400 pb-1">
                 <p>{d.education}</p>
@@ -115,7 +113,7 @@ const Booking = () => {
             onClick={() =>{
               handelRemoveItem(d.id)
             }}
-                className="w-full cursor-pointer rounded-full border border-red-600 text-red-600 font-medium hover:text-white hover:bg-red-600 my-5"
+                className="w-full cursor-pointer rounded-full border border-red-400 text-red-400  py-2 font-medium hover:text-white hover:bg-red-400 my-5"
               >
                 Cancel Appointment
               </button>
