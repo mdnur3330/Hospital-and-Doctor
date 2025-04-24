@@ -16,7 +16,6 @@ export const setDoctor = (doctor) => {
   } else {
     doctorItem.push(doctor)
     localStorage.setItem("doctor", JSON.stringify(doctorItem));
-    
   }
 };
 
@@ -25,5 +24,4 @@ export const removeDoctor = (id) => {
     const remainingDoctors = remove.filter(doctor => doctor.id !== id)
     toast.error('Appointment scheduled cancel')
     localStorage.setItem("doctor", JSON.stringify(remainingDoctors))
-    
 };

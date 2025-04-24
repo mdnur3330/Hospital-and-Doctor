@@ -3,7 +3,7 @@ import { PiTrademarkRegistered } from "react-icons/pi";
 import { Link, useLoaderData, useNavigate, useParams } from "react-router";
 import { FiAlertTriangle } from "react-icons/fi";
 import { getDoctor, setDoctor } from "../LocalStroge/LocalStroge";
-import { toast, ToastContainer } from "react-toastify";
+import {  toast, ToastContainer } from "react-toastify";
 
 
 const Details = () => {
@@ -37,14 +37,11 @@ const Details = () => {
       const bookedDoctor = { ...singleDoctors, booked: true };
       setDoctor(bookedDoctor); 
       setBooked(true);
-      toast.success(`Appointment scheduled for ${bookedDoctor.name} Successfully!!`)
-      setTimeout(() => {
-        navigate("/booking");
-      }, 700);
-      
+       navigate("/booking",{state:{showToast : true, doctorName: singleDoctors.name}});
+       
     } else {
       setBooked(true);
-      toast.error(`Appointment allready scheduled for ${found.name} today!`)
+      toast.error(`Appointment allready scheduled for ${singleDoctors.name} today!`)
     }
   };
   

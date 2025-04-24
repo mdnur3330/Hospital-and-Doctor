@@ -1,10 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { getDoctor, removeDoctor } from "../LocalStroge/LocalStroge";
-import { NavLink } from "react-router";
+import { NavLink, useLocation } from "react-router";
 import { BarChart, Bar, XAxis, YAxis, Cell, LabelList, Tooltip } from "recharts";
-import { ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 const Booking = () => {
+  const location = useLocation();
+
+useEffect(() => {
+  if (location.state?.showToast) {
+    toast.success(`Appointment successfully booked for ${location.state.doctorName} today!`);
+  }
+}, [location.state]);
+
+
   const [doctors, setDoctors] = useState([]);
   useEffect(() => {
     const getDoctors = getDoctor();
@@ -75,8 +84,8 @@ const Booking = () => {
         </div>
       ) : (
         <div>
-          <div className="bg-white rounded-lg m-10 pt-10 w-full h-[300]">
-            <BarChart width={1300} height={500} data={doctorChart}>
+          <div className="bg-white rounded-lg m-10 pt-10 w-full">
+            <BarChart width={1800} height={900} data={doctorChart}>
               <XAxis dataKey="name" />
               <YAxis />
               <Bar dataKey="fee" fill="#8884d8" shape={<TriangleBar />} >
@@ -123,6 +132,7 @@ const Booking = () => {
          
         </div>
       )}
+       
        <ToastContainer position="top-right" autoClose={3000} />
     </div>
   );
