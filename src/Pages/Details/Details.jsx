@@ -76,7 +76,7 @@ const Details = () => {
           fits your needs.
         </p>
       </div>
-      <div className="flex gap-10 py-7 px-10 bg-white rounded-lg">
+      <div className="md:flex gap-10 py-7 px-10 bg-white rounded-lg">
         <div>
           <img className="w-80 h-80 rounded-lg" src={image} alt="" />
         </div>
@@ -94,8 +94,9 @@ const Details = () => {
           </p>
           <p>
             Availability{" "}
-            {availability_day.map((day) => (
-              <button className="bg-yellow-300 px-3 rounded-full mr-2">
+            {availability_day.map((day,i) => (
+              <button className="bg-yellow-300 px-3 rounded-full mr-2 mt-2">
+                {i}
                 {day}
               </button>
             ))}
@@ -110,13 +111,13 @@ const Details = () => {
       <div className="bg-white rounded-lg py-7 px-10">
         <h3 className="text-2xl font-bold">Book an Appointment</h3>
         <div>
-          <div className="flex justify-between border-t border-b border-gray-500 border-dashed my-6 py-3">
+          <div className="flex justify-between items-center gap-4 border-t border-b border-gray-500 border-dashed my-6 py-3">
             <p>Availability</p>
-            <p className="rounded-full px-2 py-1 bg-green-100 text-green-500">
+            <p className="md:rounded-full px-2 py-1 bg-green-100 text-green-500">
               Doctor Available Today
             </p>
           </div>
-          <p className="text-yellow-400 bg-yellow-100 rounded-full px-3 flex items-center gap-2">
+          <p className="text-yellow-400 bg-yellow-100 md:rounded-full px-3 flex items-center gap-2">
           <FiAlertTriangle />
             Due to high patient volume, we are currently accepting appointments
             for today only. We appreciate your understanding and cooperation.

@@ -11,7 +11,7 @@ const Root = () => {
         setLoading(true);
         const timeout = setTimeout(() => {
           setLoading(false);
-        }, 500); 
+        }, 300); 
       
         return () => clearTimeout(timeout);
       }, [location.pathname]);

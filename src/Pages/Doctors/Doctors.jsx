@@ -14,8 +14,8 @@ const Doctors = () => {
     }
   }, [doctorsData, showAll]);
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 py-20">
-      <div className="col-span-3 text-center py-7 space-y-2">
+    <div>
+      <div className=" text-center py-7 space-y-2">
         <h1 className="text-3xl font-bold">Our Best Doctors</h1>
         <p className="text-gray-600">
           Meet our team of highly skilled and compassionate medical
@@ -25,10 +25,13 @@ const Doctors = () => {
           journey to better health.
         </p>
       </div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7 py-20">
       {doctors.map((doctor) => (
         <Doctor key={doctor.id} doctor={doctor}></Doctor>
       ))}
-      <div className="col-span-3 text-center">
+
+      </div>
+      <div className="text-center">
         <button
           onClick={() => {
             setShowAll((prv) => !prv);

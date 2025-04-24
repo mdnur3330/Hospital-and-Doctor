@@ -4,13 +4,13 @@ import logo from "../../img/logo.png";
 import { NavLink } from 'react-router';
 const Footer = () => {
     return (
-       <div className='text-center px-30 py-20 bg-white'>
+       <div className='md:text-center px-10 md:px-30 py-20 bg-white'>
          <div className='flex gap-3 justify-center items-center '>
                 <img src={logo} alt="" />
                 <h2 className=" text-3xl font-bold">Phudu</h2>
               </div>
               <div>
-        <ul className="menu menu-horizontal flex gap-5 mx-auto items-center text-xl font-medium text-gray-800 py-7">
+        <ul className="menu md:menu-horizontal md:flex gap-5 mx-auto items-center text-xl font-medium text-gray-800 py-7">
           <NavLink
             className={({ isActive }) =>
               isActive

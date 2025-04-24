@@ -3,7 +3,7 @@ import bannarImg from "../../img/banner-img-1.png";
 
 const Hero = () => {
   return (
-    <div className="text-center py-12 border-3 rounded-lg
+    <div className="hidden md:block text-center py-12 border-3 rounded-lg
      border-white bg-linear-to-t from-white to-gray-100 space-y-5 max-w-screen-3xl mx-auto px-8 md:px-12 lg:px-16 xl:px-24">
       <h1 className="text-4xl font-bold">
         Dependable Care, Backed by Trusted <br /> Professionals.

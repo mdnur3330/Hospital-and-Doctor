@@ -11,7 +11,7 @@ const Counter = () => {
         <h2 className="text-3xl font-bold mb-3" >We Provide Best Medical Services</h2>
         <p className="text-gray-500 mb-4">We are committed to delivering top-quality medical care with compassion, professionalism, and cutting-edge technology. Our experienced doctors and staff work round the clock to ensure every patient receives personalized attention, accurate diagnosis, and effective treatment. Your health is our priority — trust us to be your partner in wellness.</p>
       </div>
-      <div className="flex justify-evenly">
+      <div className="md:flex justify-evenly space-y-3 shadow">
         <div className="bg-white rounded-lg p-10 space-y-2">
           <img src={TotalDoctors} alt="" />
           <div className="text-3xl font-bold">

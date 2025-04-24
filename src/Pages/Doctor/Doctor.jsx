@@ -9,7 +9,7 @@ const Doctor = ({ doctor }) => {
     <div className="py-6 bg-white rounded-lg px-5 space-y-4 shadow">
         <img className="w-full h-70 mx-auto rounded-lg" src={image} alt="" />
         <div className="space-x-2">
-            <span className="border rounded-full px-2 py-1 bg-green-100 text-green-500">{Available}</span>
+            <span className="border hidden md:block rounded-full px-2 py-1 bg-green-100 text-green-500">{Available}</span>
             <span className="border rounded-full px-2 py-1 bg-indigo-100 text-indigo-500">{experience}</span>
         </div>
         <h3 className="text-2xl font-bold">{name}</h3>

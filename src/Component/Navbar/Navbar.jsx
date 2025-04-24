@@ -9,7 +9,7 @@ const Navbar = () => {
         <img src={logo} alt="" />
         <a className=" text-3xl font-bold">Phudu</a>
       </div>
-      <div className="navbar-center  ">
+      <div className="navbar-center hidden  md:flex">
         <ul className="menu menu-horizontal flex gap-5 items-center text-xl font-medium text-gray-800">
           <NavLink
             className={({ isActive }) =>
