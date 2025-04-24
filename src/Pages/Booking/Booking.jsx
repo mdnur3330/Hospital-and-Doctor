@@ -85,7 +85,7 @@ useEffect(() => {
       ) : (
         <div>
           <div className="bg-white rounded-lg m-10 pt-10 w-full hidden md:block">
-            <BarChart width={1500} height={900} data={doctorChart}>
+            <BarChart width={1200} height={900} data={doctorChart}>
               <XAxis dataKey="name" />
               <YAxis />
               <Bar dataKey="fee" fill="#8884d8" shape={<TriangleBar />} >
