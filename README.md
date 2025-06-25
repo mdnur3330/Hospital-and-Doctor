@@ -1,4 +1,4 @@
-# 🤖 AI Assistant Website
+# Hospital and Doctor booking website
 
 Live Site 🌐: [https://befitting-zinc.surge.sh/](https://befitting-zinc.surge.sh/)
 
